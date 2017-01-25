@@ -1,0 +1,40 @@
+E:\Projects\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.exe.config
+E:\Projects\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.exe
+E:\Projects\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.pdb
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csprojResolveAssemblyReference.cache
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.MainMenu.resources
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.Properties.Resources.resources
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csproj.GenerateResource.Cache
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.exe
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.pdb
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.CreateOrganization.resources
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.AddNewDepartment.resources
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.exe.config
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.exe
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.pdb
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.exe
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.pdb
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csprojResolveAssemblyReference.cache
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.AddNewDepartment.resources
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.AddNewEmployee.resources
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.CreateOrganization.resources
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.MainMenu.resources
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.Properties.Resources.resources
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csproj.GenerateResource.Cache
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.AddNewEmployee.resources
+E:\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.UpdateOrganization.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.exe.config
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.exe
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.pdb
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.exe
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\bin\Debug\OrganizationInfo.pdb
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csprojResolveAssemblyReference.cache
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.AddNewDepartment.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.AddNewEmployee.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.CreateOrganization.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.MainMenu.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.Properties.Resources.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.UpdateDepartment.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.UpdateEmployee.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.UpdateOrganization.resources
+C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csproj.GenerateResource.Cache

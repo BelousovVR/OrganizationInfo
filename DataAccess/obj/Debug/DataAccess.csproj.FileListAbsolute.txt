@@ -1,0 +1,5 @@
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Kholmogorov_VA\Desktop\Учеба\OrganizationInfo\DataAccess\obj\Debug\DataAccess.pdb
