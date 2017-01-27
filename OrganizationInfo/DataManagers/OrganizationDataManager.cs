@@ -6,10 +6,13 @@ namespace OrganizationInfo.DataManagers
 {
     public class OrganizationDataManager : IOrganizationDataManager
     {
+        // TODO: для юнит -тестов должно быть открытое свойство
         private IEmployeeDataManager employeeDataManager = new EmployeeDataManager();
 
+        // TODO: для юнит -тестов должно быть открытое свойство
         private IDepartmentDataManager departmnetDataManager = new DepartmentDataManager();
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Переводим экземпляр организации в строку и записываем в файл
         /// </summary>
@@ -19,12 +22,15 @@ namespace OrganizationInfo.DataManagers
         /// возвращаем новый id 
         public void Add(Organization organization)
         {
+            // TODO: в метод и в базовый класс
             var id = GetAll().Max(l => l.Id) + 1;
+            //
             organization.Id = id;
             var organizationString = OrganizationToString(organization);
             AppendOrganizationInFile(organizationString);
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Удаляем организацию и всех его сотрудников из файлов
         /// </summary>
@@ -37,6 +43,7 @@ namespace OrganizationInfo.DataManagers
             ReWriteOrganizations(GetOrganizationsWithoutSelected(organization));
         }
 
+        // TODO: комментарии
         /// <summary>
         /// 
         /// </summary>
@@ -49,6 +56,7 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: комментарии
         /// <summary>
         /// 
         /// </summary>
@@ -61,6 +69,7 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Получаем экземпляр организации по id
         /// </summary>
@@ -114,6 +123,8 @@ namespace OrganizationInfo.DataManagers
             ReWriteOrganizations(organizations);
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: в DepartmentDataManager писал как можно упростить
         /// <summary>
         /// Считываем все строки в файле
         /// </summary>
@@ -133,6 +144,8 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: в DepartmentDataManager писал как можно упростить
         /// <summary>
         /// Перезапись файла
         /// </summary>
@@ -152,6 +165,7 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Перевод экземпляра организации в строковое представление
         /// </summary>
@@ -164,6 +178,8 @@ namespace OrganizationInfo.DataManagers
             return $"\r\n{organization.Id} {organization.Name} {organization.LegalAddress}";
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: ParseOrganization
         /// <summary>
         /// Перевод строки в экземпляр организации
         /// </summary>
@@ -183,6 +199,7 @@ namespace OrganizationInfo.DataManagers
             return organization;
         }
 
+        // TODO: в DepartmentDataManager писал как можно упростить
         /// <summary>
         /// Добавление строкового представления в файл
         /// </summary>

@@ -17,20 +17,24 @@ namespace OrganizationInfo
             Ids = (IdInformation)tag;
         }
 
+        // TODO: комментарии
         private void Cancel_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        // TODO: комментарии
         private void Add_Click(object sender, EventArgs e)
         {
             AddNew();
         }
 
+        // TODO: комментарии
         private void AddNew()
         {
             if (Check())
             {
+                // TODO: DepartmentDataManager можно сделать свойством и создавать в конструкторе формы
                 DepartmentDataManager ddm = new DepartmentDataManager();
                 Department department = new Department(Ids.OrganizationId, DepartmentName.Text, Address.Text, int.Parse(MaxNumberOfEmployees.Text));
                 ddm.Add(department);
@@ -42,8 +46,13 @@ namespace OrganizationInfo
             }
         }
 
+
+        // TODO: комментарии
+        // TODO: IsDepartmentInputValid
         private bool Check()
         {
+
+            // TODO: TryParse и никакого перехвата исключений не понадобится
             try
             {
                 int.Parse(MaxNumberOfEmployees.Text);
@@ -53,19 +62,24 @@ namespace OrganizationInfo
                 MessageBox.Show("Некорректное число сотрудников");
                 return false;
             }
+            //
 
+            // TODO: повторяется int.Parse(MaxNumberOfEmployees.Text)
+            // а вообще сначала следует проверить строки на пустоту: string.NullOrEmpty(MaxNumberOfEmployees.Text)
             if (int.Parse(MaxNumberOfEmployees.Text) == 0 || MaxNumberOfEmployees.Text == null)
             {
                 MessageBox.Show("Некорректное число сотрудников");
                 return false;
             }
 
+            // TODO: сначала следует проверить строки на пустоту: string.NullOrEmpty(DepartmentName.Text)
             if (DepartmentName.Text == null || DepartmentName.Text.Contains(":"))
             {
                 MessageBox.Show("Название не может быть пустым и не может содержать двоеточие.");
                 return false;
             }
 
+            // TODO: сначала следует проверить строки на пустоту: string.NullOrEmpty(Address.Text)
             if (Address.Text == null)
             {
                 MessageBox.Show("Введите адрес!");

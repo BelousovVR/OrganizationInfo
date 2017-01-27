@@ -16,21 +16,25 @@ namespace OrganizationInfo
             Ids = (IdInformation)tag;
         }
 
+        // TODO: комментарии
         private void Add_Click(object sender, EventArgs e)
         {
             AddNew();
         }
 
+        // TODO: комментарии
         private void Cancel_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        // TODO: комментарии
         private void AddNew()
         {
             if (Check())
             {
                 Employee employee = new Employee(Ids.OrganizationId, Ids.DepartmentId, EmployeeName.Text, TaxNumber.Text, Post.Text, int.Parse(Salary.Text));
+                // TODO: DataManager можно сделать свойством формы и создавать в конструкторе
                 var edm = new EmployeeDataManager();
                 edm.Add(employee);
                 Close();
@@ -41,8 +45,11 @@ namespace OrganizationInfo
             }
         }
 
+        // TODO: комментарии
+        // TODO: IsEmployeeInputValid
         private bool Check()
         {
+            // TODO: string.IsNullOrEmpty
             if (EmployeeName.Text == null || Valid(EmployeeName.Text, "Letters"))
             {
                 MessageBox.Show("Имя не может быть пустым и может содержать только буквы");
@@ -69,6 +76,10 @@ namespace OrganizationInfo
             return true;
         }
 
+        // TODO: комментарии
+        // TODO: по логике Valid должен возвращать true в случае, если все хорошо, а у тебя наоборот
+        // TODO: надо сделать метод IsContainsOnlyLetters
+        // А для случая с цифрами просто сделать int.TryParse (если считать, что ЗП не может быть дробной)
         private bool Valid(string text, string compareCondition)
         {
             if (compareCondition=="Letters")

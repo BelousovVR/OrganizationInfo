@@ -2,8 +2,10 @@
 
 namespace OrganizationInfo
 {
+    // TODO: комментарии
     interface IEmployeeDataManager : IDataManager<Employee>
     {
+        // TODO: просто int Id
         /// <summary>
         /// 
         /// </summary>
@@ -11,6 +13,7 @@ namespace OrganizationInfo
         /// <returns></returns>
         List<Employee> GetAllByDepartmentId(IdInformation Ids);
 
+        // TODO: просто int
         /// <summary>
         /// 
         /// </summary>
@@ -18,6 +21,7 @@ namespace OrganizationInfo
         /// <returns></returns>
         List<Employee> GetAllByOrganizationId(int? organizationId);
 
+        // TODO: просто int
         /// <summary>
         /// 
         /// </summary>

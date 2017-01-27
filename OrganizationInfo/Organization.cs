@@ -2,8 +2,12 @@
 
 namespace OrganizationInfo
 {
+    // TODO: нормальные комментарии
     public class Organization
     {
+
+        // TODO: в данном случае Id должны быть просто int
+
         //id организации
         public int? Id { get; set; }
         //Название организации
@@ -30,7 +34,7 @@ namespace OrganizationInfo
             Id = orgID;
             Name = name;
             LegalAddress = legalAddress;
-            QuantityOfEmployees = 0;
+            QuantityOfEmployees = 0; // TODO: неверно, т.к. я могу передать в конструктор список сотрудников, а их количество будет равно 0
             Departments = deps;
             Employees = emps;
         }

@@ -8,6 +8,10 @@ namespace OrganizationInfo
 {
     public class Department
     {
+
+        // TODO: в данном случае OrganizationID / Id должны быть просто int, т.к. отдела без организации не существует
+        // TODO: нормальные комментарии ///
+
         //id организации
         public int? OrganizationID { get; set; }
         //id отдела

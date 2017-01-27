@@ -2,6 +2,10 @@
 {
     public class Employee
     {
+        // TODO: в данном случае OrganizationID / Id должны быть просто int, т.к. работника без организации не существует
+        // а вот  DepartmentID может быть int? т.к. работник может не иметь подразделения
+        // TODO: нормальные комментарии ///
+
         //id организации
         public int? OrganizationID { get; set; }
 

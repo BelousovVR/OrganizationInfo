@@ -6,6 +6,7 @@ namespace OrganizationInfo.DataManagers
 {
     public class EmployeeDataManager : IEmployeeDataManager
     {
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Переводим наш экземпляр "сотрудника" в строку и записываем в файл
         /// </summary>
@@ -13,12 +14,15 @@ namespace OrganizationInfo.DataManagers
         /// экземпляр сотрудника, которого надо добавить
         public void Add(Employee employee)
         {
+            // TODO: в метод и базовый класс
             var id = GetAll().Max(l => l.Id) + 1;
+            //
             employee.Id = id;
             var employeeString = EmployeeToString(employee);
             AppendEmployeeInFile(employeeString);
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Переписываем файл так, чтобы в нашем файле не было выбранного сотрудника = удаление
         /// </summary>
@@ -29,6 +33,7 @@ namespace OrganizationInfo.DataManagers
             ReWriteEmployees(GetEmployeesWithoutSelected(employee));
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Заменяем экземпляр сотрудника с таким же id как у нас на другой = обновили информацию о сотруднике
         /// </summary>
@@ -41,6 +46,8 @@ namespace OrganizationInfo.DataManagers
             ReWriteEmployees(employees);
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: здесь должен быть просто ИД сотрудника
         /// <summary>
         /// Получение сотрудника по id
         /// </summary>
@@ -52,13 +59,15 @@ namespace OrganizationInfo.DataManagers
         {
             var employee = GetAll()
                 .Where(l => l.Id == Ids.EmployeeId)
-                .Select(l => l)
+                .Select(l => l) // TODO: лишнее
                 .SingleOrDefault();
             if (employee == null)
                 return null;
             return employee;
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: ParseEmployee
         /// <summary>
         /// Переводим строковое представление нашего сотрудника в экземпляр Employee
         /// </summary>
@@ -82,6 +91,7 @@ namespace OrganizationInfo.DataManagers
             return employee;
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Получаем список всех существующих сотрудников
         /// </summary>
@@ -94,6 +104,7 @@ namespace OrganizationInfo.DataManagers
                 .ToList();
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Переводим наш экземпляр сотрудника в строковое представление
         /// </summary>
@@ -106,6 +117,7 @@ namespace OrganizationInfo.DataManagers
             return $"\r\n{employee.OrganizationID} {employee.DepartmentID } {employee.Id} {employee.Name} {employee.IndividualTaxNumber} {employee.Post} {employee.Salary}";
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Получаем всех сотрудников из заданного департамента по id
         /// </summary>
@@ -121,6 +133,7 @@ namespace OrganizationInfo.DataManagers
                 .ToList();
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Получаем всех сотрудников без отдела из заданной организации по id
         /// </summary>
@@ -136,6 +149,7 @@ namespace OrganizationInfo.DataManagers
                 .ToList();
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Получаем всех сотрудников организации по её id
         /// </summary>
@@ -151,6 +165,8 @@ namespace OrganizationInfo.DataManagers
                 .ToList();
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: в DepartmentDataManager писал, как можно упростить
         /// <summary>
         /// Получаем все строки из файла
         /// </summary>
@@ -168,6 +184,8 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: в DepartmentDataManager писал, как можно упростить
         /// <summary>
         /// Полностью перезаписываем данные в файле
         /// </summary>
@@ -187,6 +205,8 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: в DepartmentDataManager писал, как можно упростить
         /// <summary>
         /// Добавляем строковое представление сотрудника в конец файла
         /// </summary>
@@ -203,6 +223,7 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Получаем список всех сотрудников без указанного
         /// </summary>

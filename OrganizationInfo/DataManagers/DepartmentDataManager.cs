@@ -6,7 +6,10 @@ namespace OrganizationInfo.DataManagers
 {
     public class DepartmentDataManager : IDepartmentDataManager
     {
+        // TODO: для юнит тестов это поле должно быть открытым (и быть свойством)
         private IEmployeeDataManager employeeDataManager = new EmployeeDataManager();
+
+        // TODO: неверный формат комментариев. Должно быть <param name="department">Отдел</param>
 
         /// <summary>
         /// Переводим экземпляр отдела в строку и записываем в файл
@@ -17,12 +20,15 @@ namespace OrganizationInfo.DataManagers
         /// возвращаем новый id 
         public void Add(Department department)
         {
+            // TODO: в метод и в базовый класс
             var id = GetAll().Max(l => l.Id) + 1;
+            //
             department.Id = id;
             var departmentString = DepartmentToString(department);
             AppendDepartmentInFile(departmentString);
         }
 
+        // TODO: неверный формат комментариев 
         /// <summary>
         /// Удаляем отдел и всех его сотрудников из файлов
         /// </summary>
@@ -34,6 +40,7 @@ namespace OrganizationInfo.DataManagers
             ReWriteDepartments(GetDepartmentsWithoutSelected(department));
         }
 
+        //TODO: комментарии
         public void DeleteEmployees(Department department)
         {
             foreach (var employee in department.Employees)
@@ -41,6 +48,11 @@ namespace OrganizationInfo.DataManagers
                 employeeDataManager.Delete(employee);
             }
         }
+
+
+        // TODO: сюда должен передаваться ИД отдела и ничего больше. Если требуется получать отделы по ИД организации
+        // Нужно добавить дополнительный метод.
+        //TODO: неверный формат комментариев
 
         /// <summary>
         /// Получаем экземпляр отдела по id
@@ -51,9 +63,10 @@ namespace OrganizationInfo.DataManagers
         /// экземпляр отдела
         public Department Get(IdInformation Ids)
         {
+            // TODO: здесь надо получать отдел по его ИД, не по ИД организации
             var department = GetAll()
                 .Where(l => l.Id == Ids.DepartmentId && l.OrganizationID==Ids.OrganizationId)
-                .Select(l => l)
+                .Select(l => l) // TODO: лишнее
                 .SingleOrDefault();
 
             if (department == null)
@@ -76,6 +89,7 @@ namespace OrganizationInfo.DataManagers
                 .ToList();
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Обновляем информацию об отделе(имя, адрес, вместимость)
         /// </summary>
@@ -88,6 +102,8 @@ namespace OrganizationInfo.DataManagers
             ReWriteDepartments(departments);
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: int? здесь не нужен
         /// <summary>
         /// Получаем список отделов по id организации
         /// </summary>
@@ -104,6 +120,8 @@ namespace OrganizationInfo.DataManagers
                 .ToList();
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: можно проще через File.ReadAllLines
         /// <summary>
         /// Считываем все строки в файле
         /// </summary>
@@ -121,6 +139,9 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: можно проще через File.WriteLines / File.AppendText
+        // Другой способ - через FileInfo получать StringWriter и записывать через него
         /// <summary>
         /// Перезапись файла
         /// </summary>
@@ -128,6 +149,8 @@ namespace OrganizationInfo.DataManagers
         /// список отделов
         private void ReWriteDepartments(List<Department> departments)
         {
+            
+
             File.Delete(PathStorage.PathToDepartments);
             using (FileStream fs = File.Create(PathStorage.PathToDepartments))
             {
@@ -140,6 +163,7 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Перевод экземпляра отдела в строковое представление
         /// </summary>
@@ -152,6 +176,9 @@ namespace OrganizationInfo.DataManagers
             return $"\r\n{department.OrganizationID} {department.Id} {department.Name} {department.Address} {department.MaxNumberOfEmployees}\r\n";
         }
 
+
+        // TODO: неверный формат комментариев
+        // TODO: ParseDepartment
         /// <summary>
         /// Перевод строки в экземпляр отдела
         /// </summary>
@@ -173,6 +200,8 @@ namespace OrganizationInfo.DataManagers
             return department;
         }
 
+        // TODO: неверный формат комментариев
+        // TODO: выше написал как можно упростить
         /// <summary>
         /// Добавление строкового представления в файл
         /// </summary>
@@ -189,6 +218,7 @@ namespace OrganizationInfo.DataManagers
             }
         }
 
+        // TODO: неверный формат комментариев
         /// <summary>
         /// Выбор списка без 1 участника = удаление
         /// </summary>

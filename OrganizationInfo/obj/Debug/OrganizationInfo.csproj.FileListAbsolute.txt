@@ -38,3 +38,6 @@ C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\Org
 C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.UpdateEmployee.resources
 C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.UpdateOrganization.resources
 C:\Users\Виктор\Documents\Visual Studio 2015\Projects\OrganizationInfo\OrganizationInfo\obj\Debug\OrganizationInfo.csproj.GenerateResource.Cache
+C:\Users\Chaos\Desktop\OrganizationInfo-master\OrganizationInfo\bin\Debug\OrganizationInfo.exe.config
+C:\Users\Chaos\Desktop\OrganizationInfo-master\OrganizationInfo\obj\Debug\OrganizationInfo.exe
+C:\Users\Chaos\Desktop\OrganizationInfo-master\OrganizationInfo\obj\Debug\OrganizationInfo.pdb

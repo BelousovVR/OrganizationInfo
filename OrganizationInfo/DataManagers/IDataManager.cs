@@ -2,6 +2,7 @@
 
 namespace OrganizationInfo
 {
+    // TODO: комментарии
     public interface IDataManager<T>
     {
         /// <summary>
@@ -22,6 +23,8 @@ namespace OrganizationInfo
         /// </summary>
         /// <param name="obj"></param>
         void Update(T obj);
+
+        // TODO: тут надо просто int Id передавать
 
         /// <summary>
         /// 

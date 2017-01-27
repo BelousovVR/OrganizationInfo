@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace OrganizationInfo
 {
+    // TODO:  комментарии
+    // TODO: не использовать в DataManagers
     public class IdInformation
     {
         public int? OrganizationId;
